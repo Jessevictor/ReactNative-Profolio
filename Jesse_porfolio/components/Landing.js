@@ -7,7 +7,7 @@ import {
   Button,
   TouchableOpacity,
 } from 'react-native';
-const Landing = props => {
+const Landing = () => {
   return (
     <View style={styles.container}>
       <Image style={styles.img} source={require('../assets/jess.jpg')} />
@@ -15,7 +15,7 @@ const Landing = props => {
       <Text style={styles.title}>Full-Stack Developer</Text>
       <TouchableOpacity style={styles.touch}>
         <View style={styles.button}>
-          <Text style={styles.text}>Hire Me ></Text>
+          <Text style={styles.text}>Hire Me &gt; </Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   name: {
     fontSize: 25,
-    fontWeight:'bold',
+    fontWeight: 'bold',
     textAlign: 'right',
     marginTop: 80,
     marginRight: 20,
@@ -49,21 +49,21 @@ const styles = StyleSheet.create({
     width: 163,
     borderRadius: 81.5,
   },
-  touch:{
-    justifyContent:'center',
-    alignItems:'flex-end',
+  touch: {
+    justifyContent: 'center',
+    alignItems: 'flex-end',
   },
   button: {
-    justifyContent:'center',
-    alignItems:'center',
-    color:'#000000',
-    borderColor:'#C0C0C0',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: '#000000',
+    borderColor: '#C0C0C0',
     backgroundColor: '#00D084',
     marginTop: 45,
-    marginRight:80,
-    height:30,
+    marginRight: 80,
+    height: 30,
     width: 100,
-    borderRadius:12,
+    borderRadius: 12,
   },
 });
 export default Landing;
